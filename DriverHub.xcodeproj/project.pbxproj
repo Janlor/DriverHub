@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A233F162B36DF2000120923 /* JanlorLee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A233F152B36DF2000120923 /* JanlorLee.swift */; };
+		7A6040ED2B35E75600374D48 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6040EC2B35E75600374D48 /* Kingfisher */; };
+		7A6040F02B35E87900374D48 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040EE2B35E87900374D48 /* String+Crypto.swift */; };
+		7A6040F12B35E87900374D48 /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040EF2B35E87900374D48 /* String+URL.swift */; };
+		7A6040F32B35F79600374D48 /* String+Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F22B35F79600374D48 /* String+Valid.swift */; };
+		7A6040F52B35F7DE00374D48 /* Array+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F42B35F7DE00374D48 /* Array+Zip.swift */; };
+		7A6040F72B35F82700374D48 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F62B35F82700374D48 /* Color+Hex.swift */; };
+		7AB228772B35A5E800A24915 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228502B35A5E700A24915 /* CarView.swift */; };
+		7AB228782B35A5E800A24915 /* CarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228512B35A5E700A24915 /* CarInfoView.swift */; };
+		7AB228792B35A5E800A24915 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228522B35A5E700A24915 /* RetryButton.swift */; };
+		7AB2287A2B35A5E800A24915 /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228542B35A5E800A24915 /* MineView.swift */; };
+		7AB2287B2B35A5E800A24915 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228552B35A5E800A24915 /* QRCodeView.swift */; };
+		7AB2287C2B35A5E800A24915 /* PwdLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228572B35A5E800A24915 /* PwdLoginView.swift */; };
+		7AB2287D2B35A5E800A24915 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228582B35A5E800A24915 /* LoginView.swift */; };
+		7AB2287E2B35A5E800A24915 /* SMSLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228592B35A5E800A24915 /* SMSLoginView.swift */; };
+		7AB2287F2B35A5E800A24915 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2285A2B35A5E800A24915 /* MainTab.swift */; };
+		7AB228802B35A5E800A24915 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2285C2B35A5E800A24915 /* OAuth.swift */; };
+		7AB228812B35A5E800A24915 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2285D2B35A5E800A24915 /* User.swift */; };
+		7AB228822B35A5E800A24915 /* EVList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2285F2B35A5E800A24915 /* EVList.swift */; };
+		7AB228832B35A5E800A24915 /* EVInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228602B35A5E800A24915 /* EVInfo.swift */; };
+		7AB228842B35A5E800A24915 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228632B35A5E800A24915 /* AppState.swift */; };
+		7AB228852B35A5E800A24915 /* AppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228642B35A5E800A24915 /* AppCommand.swift */; };
+		7AB228862B35A5E800A24915 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228652B35A5E800A24915 /* AppError.swift */; };
+		7AB228872B35A5E800A24915 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228662B35A5E800A24915 /* AppAction.swift */; };
+		7AB228882B35A5E800A24915 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228672B35A5E800A24915 /* Store.swift */; };
+		7AB228892B35A5E800A24915 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228692B35A5E800A24915 /* FileStorage.swift */; };
+		7AB2288A2B35A5E800A24915 /* LoadCarInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2286B2B35A5E800A24915 /* LoadCarInfoRequest.swift */; };
+		7AB2288B2B35A5E800A24915 /* PwdOAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2286C2B35A5E800A24915 /* PwdOAuthRequest.swift */; };
+		7AB2288C2B35A5E800A24915 /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2286D2B35A5E800A24915 /* LogoutRequest.swift */; };
+		7AB2288D2B35A5E800A24915 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2286E2B35A5E800A24915 /* Networking.swift */; };
+		7AB2288E2B35A5E800A24915 /* LoadCarListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2286F2B35A5E800A24915 /* LoadCarListRequest.swift */; };
+		7AB2288F2B35A5E800A24915 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228702B35A5E800A24915 /* UserRequest.swift */; };
+		7AB228902B35A5E800A24915 /* SMSOAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228712B35A5E800A24915 /* SMSOAuthRequest.swift */; };
+		7AB228912B35A5E800A24915 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228732B35A5E800A24915 /* FileHelper.swift */; };
+		7AB228922B35A5E800A24915 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228742B35A5E800A24915 /* Environment.swift */; };
+		7AB228932B35A5E800A24915 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228752B35A5E800A24915 /* CodableHelper.swift */; };
+		7AB228942B35A5E800A24915 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228762B35A5E800A24915 /* String+Image.swift */; };
+		7AB228DB2B35A8A800A24915 /* HttpBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228DA2B35A8A800A24915 /* HttpBaseModel.swift */; };
+		7ABFBEC52B359192000372DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFBEC42B359192000372DC /* AppDelegate.swift */; };
+		7ABFBEC72B359192000372DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFBEC62B359192000372DC /* SceneDelegate.swift */; };
+		7ABFBEC92B359192000372DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFBEC82B359192000372DC /* ViewController.swift */; };
+		7ABFBECC2B359192000372DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABFBECA2B359192000372DC /* Main.storyboard */; };
+		7ABFBECE2B359194000372DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABFBECD2B359194000372DC /* Assets.xcassets */; };
+		7ABFBED12B359194000372DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABFBECF2B359194000372DC /* LaunchScreen.storyboard */; };
+		7ABFBEDF2B3591A6000372DC /* CarSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFBEDE2B3591A6000372DC /* CarSyncApp.swift */; };
+		7ABFBEE12B3591A6000372DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFBEE02B3591A6000372DC /* ContentView.swift */; };
+		7ABFBEE32B3591A7000372DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABFBEE22B3591A7000372DC /* Assets.xcassets */; };
+		7ABFBEE62B3591A7000372DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABFBEE52B3591A7000372DC /* Preview Assets.xcassets */; };
+		7ABFBEE92B3591A7000372DC /* CarSync Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7ABFBEDC2B3591A6000372DC /* CarSync Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ABFBEE72B3591A7000372DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ABFBEB92B359192000372DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ABFBEDB2B3591A6000372DC;
+			remoteInfo = "CarSync Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7ABFBEED2B3591A7000372DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7ABFBEE92B3591A7000372DC /* CarSync Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A233F152B36DF2000120923 /* JanlorLee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanlorLee.swift; sourceTree = "<group>"; };
+		7A6040EE2B35E87900374D48 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
+		7A6040EF2B35E87900374D48 /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		7A6040F22B35F79600374D48 /* String+Valid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Valid.swift"; sourceTree = "<group>"; };
+		7A6040F42B35F7DE00374D48 /* Array+Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Zip.swift"; sourceTree = "<group>"; };
+		7A6040F62B35F82700374D48 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		7AB228502B35A5E700A24915 /* CarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		7AB228512B35A5E700A24915 /* CarInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarInfoView.swift; sourceTree = "<group>"; };
+		7AB228522B35A5E700A24915 /* RetryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		7AB228542B35A5E800A24915 /* MineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		7AB228552B35A5E800A24915 /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		7AB228572B35A5E800A24915 /* PwdLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwdLoginView.swift; sourceTree = "<group>"; };
+		7AB228582B35A5E800A24915 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7AB228592B35A5E800A24915 /* SMSLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSLoginView.swift; sourceTree = "<group>"; };
+		7AB2285A2B35A5E800A24915 /* MainTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		7AB2285C2B35A5E800A24915 /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		7AB2285D2B35A5E800A24915 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7AB2285F2B35A5E800A24915 /* EVList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVList.swift; sourceTree = "<group>"; };
+		7AB228602B35A5E800A24915 /* EVInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVInfo.swift; sourceTree = "<group>"; };
+		7AB228632B35A5E800A24915 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		7AB228642B35A5E800A24915 /* AppCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommand.swift; sourceTree = "<group>"; };
+		7AB228652B35A5E800A24915 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		7AB228662B35A5E800A24915 /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		7AB228672B35A5E800A24915 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7AB228692B35A5E800A24915 /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		7AB2286B2B35A5E800A24915 /* LoadCarInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCarInfoRequest.swift; sourceTree = "<group>"; };
+		7AB2286C2B35A5E800A24915 /* PwdOAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwdOAuthRequest.swift; sourceTree = "<group>"; };
+		7AB2286D2B35A5E800A24915 /* LogoutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
+		7AB2286E2B35A5E800A24915 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7AB2286F2B35A5E800A24915 /* LoadCarListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCarListRequest.swift; sourceTree = "<group>"; };
+		7AB228702B35A5E800A24915 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		7AB228712B35A5E800A24915 /* SMSOAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSOAuthRequest.swift; sourceTree = "<group>"; };
+		7AB228732B35A5E800A24915 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		7AB228742B35A5E800A24915 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		7AB228752B35A5E800A24915 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		7AB228762B35A5E800A24915 /* String+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		7AB228DA2B35A8A800A24915 /* HttpBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpBaseModel.swift; sourceTree = "<group>"; };
+		7ABFBEC12B359192000372DC /* DriverHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABFBEC42B359192000372DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ABFBEC62B359192000372DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7ABFBEC82B359192000372DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ABFBECB2B359192000372DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ABFBECD2B359194000372DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ABFBED02B359194000372DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ABFBED22B359194000372DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABFBEDC2B3591A6000372DC /* CarSync Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarSync Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABFBEDE2B3591A6000372DC /* CarSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSyncApp.swift; sourceTree = "<group>"; };
+		7ABFBEE02B3591A6000372DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7ABFBEE22B3591A7000372DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ABFBEE52B3591A7000372DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ABFBEBE2B359192000372DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ABFBED92B3591A6000372DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6040ED2B35E75600374D48 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A233F142B36DEB300120923 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A233F152B36DF2000120923 /* JanlorLee.swift */,
+				7AB228762B35A5E800A24915 /* String+Image.swift */,
+				7A6040EE2B35E87900374D48 /* String+Crypto.swift */,
+				7A6040EF2B35E87900374D48 /* String+URL.swift */,
+				7A6040F22B35F79600374D48 /* String+Valid.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7AB2284E2B35A5E700A24915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2285A2B35A5E800A24915 /* MainTab.swift */,
+				7AB228562B35A5E800A24915 /* Login */,
+				7AB2284F2B35A5E700A24915 /* Car */,
+				7AB228532B35A5E800A24915 /* Mine */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AB2284F2B35A5E700A24915 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228502B35A5E700A24915 /* CarView.swift */,
+				7AB228512B35A5E700A24915 /* CarInfoView.swift */,
+				7AB228522B35A5E700A24915 /* RetryButton.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		7AB228532B35A5E800A24915 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228542B35A5E800A24915 /* MineView.swift */,
+				7AB228552B35A5E800A24915 /* QRCodeView.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		7AB228562B35A5E800A24915 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228582B35A5E800A24915 /* LoginView.swift */,
+				7AB228572B35A5E800A24915 /* PwdLoginView.swift */,
+				7AB228592B35A5E800A24915 /* SMSLoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7AB2285B2B35A5E800A24915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2285C2B35A5E800A24915 /* OAuth.swift */,
+				7AB2285D2B35A5E800A24915 /* User.swift */,
+				7AB228DA2B35A8A800A24915 /* HttpBaseModel.swift */,
+				7AB2285E2B35A5E800A24915 /* DataModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AB2285E2B35A5E800A24915 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2285F2B35A5E800A24915 /* EVList.swift */,
+				7AB228602B35A5E800A24915 /* EVInfo.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		7AB228612B35A5E800A24915 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228622B35A5E800A24915 /* DataFlow */,
+				7AB2286A2B35A5E800A24915 /* Networking */,
+				7AB228682B35A5E800A24915 /* FileIO */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		7AB228622B35A5E800A24915 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228672B35A5E800A24915 /* Store.swift */,
+				7AB228632B35A5E800A24915 /* AppState.swift */,
+				7AB228662B35A5E800A24915 /* AppAction.swift */,
+				7AB228642B35A5E800A24915 /* AppCommand.swift */,
+				7AB228652B35A5E800A24915 /* AppError.swift */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		7AB228682B35A5E800A24915 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228692B35A5E800A24915 /* FileStorage.swift */,
+			);
+			path = FileIO;
+			sourceTree = "<group>";
+		};
+		7AB2286A2B35A5E800A24915 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2286E2B35A5E800A24915 /* Networking.swift */,
+				7AB2286C2B35A5E800A24915 /* PwdOAuthRequest.swift */,
+				7AB228712B35A5E800A24915 /* SMSOAuthRequest.swift */,
+				7AB228702B35A5E800A24915 /* UserRequest.swift */,
+				7AB2286D2B35A5E800A24915 /* LogoutRequest.swift */,
+				7AB2286B2B35A5E800A24915 /* LoadCarInfoRequest.swift */,
+				7AB2286F2B35A5E800A24915 /* LoadCarListRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7AB228722B35A5E800A24915 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7AB228742B35A5E800A24915 /* Environment.swift */,
+				7AB228732B35A5E800A24915 /* FileHelper.swift */,
+				7AB228752B35A5E800A24915 /* CodableHelper.swift */,
+				7A6040F42B35F7DE00374D48 /* Array+Zip.swift */,
+				7A6040F62B35F82700374D48 /* Color+Hex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7ABFBEB82B359192000372DC = {
+			isa = PBXGroup;
+			children = (
+				7ABFBEC32B359192000372DC /* DriverHub */,
+				7ABFBEDD2B3591A6000372DC /* CarSync Watch App */,
+				7ABFBEC22B359192000372DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ABFBEC22B359192000372DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFBEC12B359192000372DC /* DriverHub.app */,
+				7ABFBEDC2B3591A6000372DC /* CarSync Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ABFBEC32B359192000372DC /* DriverHub */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFBEC42B359192000372DC /* AppDelegate.swift */,
+				7ABFBEC62B359192000372DC /* SceneDelegate.swift */,
+				7ABFBEC82B359192000372DC /* ViewController.swift */,
+				7ABFBECA2B359192000372DC /* Main.storyboard */,
+				7ABFBECD2B359194000372DC /* Assets.xcassets */,
+				7ABFBECF2B359194000372DC /* LaunchScreen.storyboard */,
+				7ABFBED22B359194000372DC /* Info.plist */,
+			);
+			path = DriverHub;
+			sourceTree = "<group>";
+		};
+		7ABFBEDD2B3591A6000372DC /* CarSync Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFBEDE2B3591A6000372DC /* CarSyncApp.swift */,
+				7ABFBEE02B3591A6000372DC /* ContentView.swift */,
+				7AB228612B35A5E800A24915 /* State */,
+				7AB2285B2B35A5E800A24915 /* Model */,
+				7A233F142B36DEB300120923 /* Extensions */,
+				7AB228722B35A5E800A24915 /* Utils */,
+				7AB2284E2B35A5E700A24915 /* View */,
+				7ABFBEE22B3591A7000372DC /* Assets.xcassets */,
+				7ABFBEE42B3591A7000372DC /* Preview Content */,
+			);
+			path = "CarSync Watch App";
+			sourceTree = "<group>";
+		};
+		7ABFBEE42B3591A7000372DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFBEE52B3591A7000372DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ABFBEC02B359192000372DC /* DriverHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABFBED52B359194000372DC /* Build configuration list for PBXNativeTarget "DriverHub" */;
+			buildPhases = (
+				7ABFBEBD2B359192000372DC /* Sources */,
+				7ABFBEBE2B359192000372DC /* Frameworks */,
+				7ABFBEBF2B359192000372DC /* Resources */,
+				7ABFBEED2B3591A7000372DC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ABFBEE82B3591A7000372DC /* PBXTargetDependency */,
+			);
+			name = DriverHub;
+			productName = DriverHub;
+			productReference = 7ABFBEC12B359192000372DC /* DriverHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ABFBEDB2B3591A6000372DC /* CarSync Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABFBEEA2B3591A7000372DC /* Build configuration list for PBXNativeTarget "CarSync Watch App" */;
+			buildPhases = (
+				7ABFBED82B3591A6000372DC /* Sources */,
+				7ABFBED92B3591A6000372DC /* Frameworks */,
+				7ABFBEDA2B3591A6000372DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CarSync Watch App";
+			packageProductDependencies = (
+				7A6040EC2B35E75600374D48 /* Kingfisher */,
+			);
+			productName = "CarSync Watch App";
+			productReference = 7ABFBEDC2B3591A6000372DC /* CarSync Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ABFBEB92B359192000372DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = "";
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Janlor Lee";
+				TargetAttributes = {
+					7ABFBEC02B359192000372DC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					7ABFBEDB2B3591A6000372DC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7ABFBEBC2B359192000372DC /* Build configuration list for PBXProject "DriverHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ABFBEB82B359192000372DC;
+			packageReferences = (
+				7A6040EB2B35E75600374D48 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 7ABFBEC22B359192000372DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ABFBEC02B359192000372DC /* DriverHub */,
+				7ABFBEDB2B3591A6000372DC /* CarSync Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ABFBEBF2B359192000372DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABFBED12B359194000372DC /* LaunchScreen.storyboard in Resources */,
+				7ABFBECE2B359194000372DC /* Assets.xcassets in Resources */,
+				7ABFBECC2B359192000372DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ABFBEDA2B3591A6000372DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABFBEE62B3591A7000372DC /* Preview Assets.xcassets in Resources */,
+				7ABFBEE32B3591A7000372DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ABFBEBD2B359192000372DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABFBEC92B359192000372DC /* ViewController.swift in Sources */,
+				7ABFBEC52B359192000372DC /* AppDelegate.swift in Sources */,
+				7ABFBEC72B359192000372DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ABFBED82B3591A6000372DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB2288A2B35A5E800A24915 /* LoadCarInfoRequest.swift in Sources */,
+				7AB2288C2B35A5E800A24915 /* LogoutRequest.swift in Sources */,
+				7AB2288F2B35A5E800A24915 /* UserRequest.swift in Sources */,
+				7AB228872B35A5E800A24915 /* AppAction.swift in Sources */,
+				7AB228812B35A5E800A24915 /* User.swift in Sources */,
+				7A6040F12B35E87900374D48 /* String+URL.swift in Sources */,
+				7AB228832B35A5E800A24915 /* EVInfo.swift in Sources */,
+				7A6040F72B35F82700374D48 /* Color+Hex.swift in Sources */,
+				7AB228862B35A5E800A24915 /* AppError.swift in Sources */,
+				7A6040F02B35E87900374D48 /* String+Crypto.swift in Sources */,
+				7ABFBEE12B3591A6000372DC /* ContentView.swift in Sources */,
+				7AB228892B35A5E800A24915 /* FileStorage.swift in Sources */,
+				7A6040F32B35F79600374D48 /* String+Valid.swift in Sources */,
+				7AB2287A2B35A5E800A24915 /* MineView.swift in Sources */,
+				7AB228912B35A5E800A24915 /* FileHelper.swift in Sources */,
+				7AB228782B35A5E800A24915 /* CarInfoView.swift in Sources */,
+				7AB228802B35A5E800A24915 /* OAuth.swift in Sources */,
+				7AB228852B35A5E800A24915 /* AppCommand.swift in Sources */,
+				7AB228942B35A5E800A24915 /* String+Image.swift in Sources */,
+				7AB228902B35A5E800A24915 /* SMSOAuthRequest.swift in Sources */,
+				7A233F162B36DF2000120923 /* JanlorLee.swift in Sources */,
+				7AB2287D2B35A5E800A24915 /* LoginView.swift in Sources */,
+				7AB2287B2B35A5E800A24915 /* QRCodeView.swift in Sources */,
+				7AB2287C2B35A5E800A24915 /* PwdLoginView.swift in Sources */,
+				7AB228792B35A5E800A24915 /* RetryButton.swift in Sources */,
+				7AB228922B35A5E800A24915 /* Environment.swift in Sources */,
+				7ABFBEDF2B3591A6000372DC /* CarSyncApp.swift in Sources */,
+				7AB228842B35A5E800A24915 /* AppState.swift in Sources */,
+				7AB228882B35A5E800A24915 /* Store.swift in Sources */,
+				7AB228DB2B35A8A800A24915 /* HttpBaseModel.swift in Sources */,
+				7A6040F52B35F7DE00374D48 /* Array+Zip.swift in Sources */,
+				7AB2288B2B35A5E800A24915 /* PwdOAuthRequest.swift in Sources */,
+				7AB2288E2B35A5E800A24915 /* LoadCarListRequest.swift in Sources */,
+				7AB2287E2B35A5E800A24915 /* SMSLoginView.swift in Sources */,
+				7AB228932B35A5E800A24915 /* CodableHelper.swift in Sources */,
+				7AB2288D2B35A5E800A24915 /* Networking.swift in Sources */,
+				7AB228772B35A5E800A24915 /* CarView.swift in Sources */,
+				7AB228822B35A5E800A24915 /* EVList.swift in Sources */,
+				7AB2287F2B35A5E800A24915 /* MainTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ABFBEE82B3591A7000372DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ABFBEDB2B3591A6000372DC /* CarSync Watch App */;
+			targetProxy = 7ABFBEE72B3591A7000372DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ABFBECA2B359192000372DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABFBECB2B359192000372DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7ABFBECF2B359194000372DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABFBED02B359194000372DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ABFBED32B359194000372DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ABFBED42B359194000372DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ABFBED62B359194000372DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5WGUK9HS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DriverHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "车行家";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janlor.DriverHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ABFBED72B359194000372DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5WGUK9HS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DriverHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "车行家";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janlor.DriverHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7ABFBEEB2B3591A7000372DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarSync Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A5WGUK9HS4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "车行家";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.janlor.DriverHub;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janlor.DriverHub.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		7ABFBEEC2B3591A7000372DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarSync Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A5WGUK9HS4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "车行家";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.janlor.DriverHub;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janlor.DriverHub.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ABFBEBC2B359192000372DC /* Build configuration list for PBXProject "DriverHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABFBED32B359194000372DC /* Debug */,
+				7ABFBED42B359194000372DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ABFBED52B359194000372DC /* Build configuration list for PBXNativeTarget "DriverHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABFBED62B359194000372DC /* Debug */,
+				7ABFBED72B359194000372DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ABFBEEA2B3591A7000372DC /* Build configuration list for PBXNativeTarget "CarSync Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABFBEEB2B3591A7000372DC /* Debug */,
+				7ABFBEEC2B3591A7000372DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A6040EB2B35E75600374D48 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A6040EC2B35E75600374D48 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6040EB2B35E75600374D48 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7ABFBEB92B359192000372DC /* Project object */;
+}

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUI_Apple_Watch_Decimal_Pad
 
 struct LoginView: View {
     
@@ -23,7 +24,8 @@ struct LoginView: View {
                 
                 Divider()
                 
-                TextField("手机号码", text: loginBinding.checker.username)
+//                TextField("手机号码", text: loginBinding.checker.username)
+                DigiTextView(placeholder: "手机号码", text: loginBinding.checker.username, presentingModal: false)
                     .textContentType(.username)
                     .foregroundColor(login.isUsernameValid ? .green : .red)
                 

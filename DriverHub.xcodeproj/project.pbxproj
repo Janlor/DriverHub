@@ -14,6 +14,7 @@
 		7A6040F32B35F79600374D48 /* String+Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F22B35F79600374D48 /* String+Valid.swift */; };
 		7A6040F52B35F7DE00374D48 /* Array+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F42B35F7DE00374D48 /* Array+Zip.swift */; };
 		7A6040F72B35F82700374D48 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6040F62B35F82700374D48 /* Color+Hex.swift */; };
+		7AA578D92B3CEDBD00A5C931 /* SwiftUI Apple Watch Decimal Pad in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA578D82B3CEDBD00A5C931 /* SwiftUI Apple Watch Decimal Pad */; };
 		7AB228772B35A5E800A24915 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228502B35A5E700A24915 /* CarView.swift */; };
 		7AB228782B35A5E800A24915 /* CarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228512B35A5E700A24915 /* CarInfoView.swift */; };
 		7AB228792B35A5E800A24915 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB228522B35A5E700A24915 /* RetryButton.swift */; };
@@ -148,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6040ED2B35E75600374D48 /* Kingfisher in Frameworks */,
+				7AA578D92B3CEDBD00A5C931 /* SwiftUI Apple Watch Decimal Pad in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +377,7 @@
 			name = "CarSync Watch App";
 			packageProductDependencies = (
 				7A6040EC2B35E75600374D48 /* Kingfisher */,
+				7AA578D82B3CEDBD00A5C931 /* SwiftUI Apple Watch Decimal Pad */,
 			);
 			productName = "CarSync Watch App";
 			productReference = 7ABFBEDC2B3591A6000372DC /* CarSync Watch App.app */;
@@ -411,6 +414,7 @@
 			mainGroup = 7ABFBEB82B359192000372DC;
 			packageReferences = (
 				7A6040EB2B35E75600374D48 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7AA578D72B3CEDBD00A5C931 /* XCRemoteSwiftPackageReference "SwiftUI-Apple-Watch-Decimal-Pad" */,
 			);
 			productRefGroup = 7ABFBEC22B359192000372DC /* Products */;
 			projectDirPath = "";
@@ -815,6 +819,14 @@
 				minimumVersion = 7.10.1;
 			};
 		};
+		7AA578D72B3CEDBD00A5C931 /* XCRemoteSwiftPackageReference "SwiftUI-Apple-Watch-Decimal-Pad" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ApplebaumIan/SwiftUI-Apple-Watch-Decimal-Pad.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -822,6 +834,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7A6040EB2B35E75600374D48 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		7AA578D82B3CEDBD00A5C931 /* SwiftUI Apple Watch Decimal Pad */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AA578D72B3CEDBD00A5C931 /* XCRemoteSwiftPackageReference "SwiftUI-Apple-Watch-Decimal-Pad" */;
+			productName = "SwiftUI Apple Watch Decimal Pad";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

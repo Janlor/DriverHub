@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUI_Apple_Watch_Decimal_Pad
 
 struct SMSLoginView: View {
     
@@ -18,7 +19,8 @@ struct SMSLoginView: View {
     var body: some View {
         Form {
             Section {
-                TextField("验证码", text: loginBinding.checker.smsCode)
+//                TextField("验证码", text: loginBinding.checker.smsCode)
+                DigiTextView(placeholder: "验证码", text: loginBinding.checker.smsCode, presentingModal: false)
                     .textContentType(.oneTimeCode)
                     .foregroundColor(login.isSmsCodeValid ? .green : .red)
                 VStack {

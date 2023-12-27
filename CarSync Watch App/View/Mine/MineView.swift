@@ -23,7 +23,6 @@ struct MineView: View {
                 } else {
                     MineLoadUserView()
                 }
-                
                 MineSettingView()
             }
             .alert(item: mineBinding.mineError) { e in

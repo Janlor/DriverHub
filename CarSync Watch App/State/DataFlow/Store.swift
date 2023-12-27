@@ -94,6 +94,7 @@ class Store: ObservableObject {
                 appState.mine.mineError = .noLogin
             }
         case .requestUserDone(let result):
+            appState.mine.isLoadingUser = false
             switch result {
             case .success((let user)):
                 appState.mine.loginUser = user

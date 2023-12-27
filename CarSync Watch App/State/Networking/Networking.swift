@@ -36,13 +36,9 @@ open class Networking<T: Codable> {
     ) -> AnyPublisher<T, AppError> {
         var urlStr = urlString
         
-        // mock 鉴权
-        var params = parameters ?? [String: Any]()
-        params["apifoxToken"] = Environment.apiMockToken
-        
         // Query 传参
         if method == .get {
-            urlStr = makeQueryUrlString(urlString, parameters: params)
+            urlStr = makeQueryUrlString(urlString, parameters: parameters)
         }
         
         // 包装请求体
@@ -54,7 +50,7 @@ open class Networking<T: Codable> {
         request.httpMethod = method?.rawValue
         
         // Body 传参
-        if !params.isEmpty, method == .post {
+        if let params = parameters, !params.isEmpty, method == .post {
             request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
         }
         
@@ -94,7 +90,6 @@ open class Networking<T: Codable> {
         parameters: [String: Any]? = nil
     ) -> AnyPublisher<T, AppError> {
         var formParams = parameters ?? [String: Any]()
-        formParams["apifoxToken"] = Environment.apiMockToken
         formParams["client_id"] = Environment.appClientID
         formParams["client_secret"] = Environment.appClientSecret
         formParams["state"] = UUID().uuidString
@@ -142,7 +137,6 @@ open class Networking<T: Codable> {
         parameters: [String: Any]? = nil
     ) -> AnyPublisher<T, AppError> {
         var formParams = parameters ?? [String: Any]()
-        formParams["apifoxToken"] = Environment.apiMockToken
         formParams["client_id"] = Environment.appClientID
         formParams["client_secret"] = Environment.appClientSecret
         formParams["state"] = Store.shared.appState.login.loginOAuth?.state ?? UUID().uuidString

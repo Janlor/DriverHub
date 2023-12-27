@@ -10,7 +10,7 @@ import SwiftUI
 
 struct QRCodeView: View {
     var body: some View {
-        Image("IMG_ECECB71F2467-1")
+        Image("Janlor_DriverHub")
             .resizable()
             .padding(.horizontal)
     }

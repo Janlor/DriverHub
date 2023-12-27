@@ -15,16 +15,9 @@ struct PwdLoginView: View {
     private var login: AppState.LoginState { store.appState.login }
     private var loginBinding: Binding<AppState.LoginState> { $store.appState.login }
     
-    @State private var username = ""
-    @State private var password = ""
-    
     var body: some View {
         Form {
             Section {
-                TextField("手机号码", text: loginBinding.checker.username)
-                    .textContentType(.username)
-                    .foregroundColor(login.isUsernameValid ? .green : .red)
-                
                 SecureField("密码", text: loginBinding.checker.password)
                     .textContentType(.password)
                     .foregroundColor(login.isPasswordValid ? .green : .red)

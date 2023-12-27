@@ -18,9 +18,6 @@ struct SMSLoginView: View {
     var body: some View {
         Form {
             Section {
-                TextField("手机号码", text: loginBinding.checker.username)
-                    .textContentType(.username)
-                    .foregroundColor(login.isUsernameValid ? .green : .red)
                 TextField("验证码", text: loginBinding.checker.smsCode)
                     .textContentType(.oneTimeCode)
                     .foregroundColor(login.isSmsCodeValid ? .green : .red)

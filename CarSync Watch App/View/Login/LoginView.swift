@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @EnvironmentObject var store: Store
+    
+    private var login: AppState.LoginState { store.appState.login }
+    private var loginBinding: Binding<AppState.LoginState> { $store.appState.login }
         
     var body: some View {
         NavigationView {
@@ -17,6 +22,10 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                 
                 Divider()
+                
+                TextField("手机号码", text: loginBinding.checker.username)
+                    .textContentType(.username)
+                    .foregroundColor(login.isUsernameValid ? .green : .red)
                 
                 HStack {
                     NavigationLink("密码", destination: {
@@ -31,6 +40,7 @@ struct LoginView: View {
                             .navigationBarTitleDisplayMode(.inline)
                     })
                 }
+                .disabled(!login.isUsernameValid)
             }
             .padding(.horizontal)
         }

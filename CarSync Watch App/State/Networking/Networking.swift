@@ -237,7 +237,7 @@ fileprivate extension Networking {
         request.setValue(systemVersion, forHTTPHeaderField: "platformVersion")
         request.setValue(deviceType, forHTTPHeaderField: "deviceType")
         
-        // 版本号 e.g. @"4.8.12"
+        // 版本号 e.g. @"1.2.1"
         if let version = Environment.appShortVersion {
             request.setValue(version, forHTTPHeaderField: "version")
         }
